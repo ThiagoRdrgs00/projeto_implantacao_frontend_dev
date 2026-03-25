@@ -14,7 +14,7 @@ export default function Login({ onLogin, goToRegister }) {
     setError('');
     setLoading(true);
     try {
-      const res = await api.post('/auth/login', { email, password });
+      const res = await api.post('/login', { email, password });
       localStorage.setItem('token', res.data.token);
       onLogin();
     } catch (err) {

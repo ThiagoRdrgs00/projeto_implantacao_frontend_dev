@@ -14,7 +14,7 @@ export default function Register({ onRegister }) {
     setError(''); setSuccess('');
     setLoading(true);
     try {
-      await api.post('/auth/register', { email, password });
+      await api.post('/register', { email, password });
       setSuccess('Cadastro realizado! Faça login.');
       setEmail(''); setPassword('');
       if (onRegister) onRegister();
