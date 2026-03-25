@@ -6,7 +6,6 @@
   position: relative;
 }
 
-/* IMAGEM CENTRAL */
 .finance-image {
   flex: 1;
   display: flex;
@@ -27,7 +26,6 @@
   font-weight: 500;
 }
 
-/* LOGIN NO CANTO SUPERIOR DIREITO */
 .login-box {
   position: absolute;
   top: 40px;

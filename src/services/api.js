@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://projectimplantacaobeck-production.up.railway.app/api', // coloque aqui a URL pública do backend
+  baseURL: 'https://projectimplantacaobeck-production.up.railway.app',
 });
 
 api.interceptors.request.use(config => {
