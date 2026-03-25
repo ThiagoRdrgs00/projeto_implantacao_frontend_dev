@@ -1,0 +1,97 @@
+.dashboard-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.saldo-card {
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+  min-width: 220px;
+}
+.saldo-card span {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.saldo-card h1 {
+  margin: 0.2rem 0 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.2rem;
+}
+.add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-btn:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.dashboard-table-section {
+  margin-top: 1.5rem;
+}
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.dashboard-table th, .dashboard-table td {
+  padding: 0.7rem 0.5rem;
+  text-align: left;
+}
+.dashboard-table th {
+  background: #f3f4f6;
+  color: #2563eb;
+  font-weight: 600;
+}
+.dashboard-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+.dashboard-table tr:last-child {
+  border-bottom: none;
+}
+.dashboard-table tr.receita td {
+  color: #16a34a;
+}
+.dashboard-table tr.despesa td {
+  color: #dc2626;
+}
+.dashboard-loading {
+  text-align: center;
+  color: #2563eb;
+  padding: 1.5rem 0;
+}
+.dashboard-empty {
+  text-align: center;
+  color: #888;
+  padding: 1.5rem 0;
+}
